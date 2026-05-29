@@ -78,7 +78,7 @@ export default function FranchiseAgreementPage() {
           </Block>
 
           <Block title="7. Termination">
-            Either party may terminate the agreement with 30 days' written notice. Momofy may terminate immediately in cases of:
+            Either party may terminate the agreement with 30 days&apos; written notice. Momofy may terminate immediately in cases of:
             <ul className="list-disc list-inside space-y-1 mt-2 font-dm text-sm text-[#1A0A00]/70">
               <li>Breach of food safety standards</li>
               <li>Reputational damage to the Momofy brand</li>

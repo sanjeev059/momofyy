@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
           <Block title="1. Who We Are">
-            Momofy ("we", "us", "our") is a frozen momo manufacturing and franchise company headquartered in Bangalore, Karnataka, India. We operate the website momofyy.com and supply frozen momos to restaurants, franchisees, and B2B partners across India.
+            Momofy (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a frozen momo manufacturing and franchise company headquartered in Bangalore, Karnataka, India. We operate the website momofyy.com and supply frozen momos to restaurants, franchisees, and B2B partners across India.
           </Block>
 
           <Block title="2. Information We Collect">
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
           </Block>
 
           <Block title="4. WhatsApp Communication">
-            When you communicate with us via WhatsApp, your messages are subject to WhatsApp's own Privacy Policy (whatsapp.com/legal/privacy-policy). We use WhatsApp to process orders and provide customer support. We do not store WhatsApp messages on our servers beyond what is necessary to fulfill your order.
+            When you communicate with us via WhatsApp, your messages are subject to WhatsApp&apos;s own Privacy Policy (whatsapp.com/legal/privacy-policy). We use WhatsApp to process orders and provide customer support. We do not store WhatsApp messages on our servers beyond what is necessary to fulfill your order.
           </Block>
 
           <Block title="5. Data Storage and Security">
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
           </Block>
 
           <Block title="9. Changes to This Policy">
-            We may update this Privacy Policy from time to time. We will post the updated version on this page with a revised "Last updated" date. Continued use of our services after changes constitutes acceptance of the updated policy.
+            We may update this Privacy Policy from time to time. We will post the updated version on this page with a revised &quot;Last updated&quot; date. Continued use of our services after changes constitutes acceptance of the updated policy.
           </Block>
 
           <Block title="10. Contact Us">
