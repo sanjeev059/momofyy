@@ -7,6 +7,7 @@ import FreshVsFrozen from "@/components/FreshVsFrozen";
 import Franchise from "@/components/Franchise";
 import B2B from "@/components/B2B";
 import Testimonials from "@/components/Testimonials";
+import PartyOrders from "@/components/PartyOrders";
 import FAQ from "@/components/FAQ";
 import HygieneSection from "@/components/HygieneSection";
 import LeadForm from "@/components/LeadForm";
@@ -36,6 +37,7 @@ export default function Home() {
       <Franchise />
       <B2B />
       <Testimonials />
+      <PartyOrders />
       <FAQ />
       <HygieneSection />
 

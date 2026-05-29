@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProductList from "@/components/ProductList";
 import FreshVsFrozen from "@/components/FreshVsFrozen";
+import PartyOrders from "@/components/PartyOrders";
 import FAQ from "@/components/FAQ";
 import HygieneSection from "@/components/HygieneSection";
 import LeadForm from "@/components/LeadForm";
@@ -33,6 +34,7 @@ export default function ProductsPage() {
 
       <ProductList />
       <FreshVsFrozen />
+      <PartyOrders />
 
       {/* Bulk Pricing */}
       <section className="py-12 sm:py-16 bg-white">
