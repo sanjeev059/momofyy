@@ -90,15 +90,15 @@ export default function FranchisePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-[#2E1500] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <p className="font-dm text-sm font-medium text-[#FFB347] tracking-widest uppercase">
+      <section className="pt-24 pb-10 bg-[#2E1500] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+          <p className="font-dm text-xs sm:text-sm font-medium text-[#FFB347] tracking-widest uppercase">
             Franchise Opportunity
           </p>
-          <h1 className="font-syne font-extrabold text-5xl sm:text-6xl">
+          <h1 className="font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl">
             Own a <span className="text-[#E8320A]">Momofy</span> Franchise
           </h1>
-          <p className="font-dm text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="font-dm text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
             Start your momo business from ₹89,000. Proven model, full support, and profit from day one.
           </p>
         </div>

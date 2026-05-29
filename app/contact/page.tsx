@@ -14,12 +14,12 @@ const WA_MSG = encodeURIComponent("Hi Momofy! I'd like to get in touch.");
 export default function ContactPage() {
   return (
     <>
-      <section className="pt-28 pb-16 bg-[#FFF8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase">
+      <section className="pt-24 pb-10 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+          <p className="font-dm text-xs sm:text-sm font-medium text-[#E8320A] tracking-widest uppercase">
             Get in Touch
           </p>
-          <h1 className="font-syne font-extrabold text-5xl sm:text-6xl text-[#1A0A00]">
+          <h1 className="font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A0A00]">
             Contact <span className="text-[#E8320A]">Momofy</span>
           </h1>
         </div>

@@ -10,15 +10,15 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="pt-28 pb-16 bg-[#FFF8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase">
+      <section className="pt-24 pb-10 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+          <p className="font-dm text-xs sm:text-sm font-medium text-[#E8320A] tracking-widest uppercase">
             Our Story
           </p>
-          <h1 className="font-syne font-extrabold text-5xl sm:text-6xl text-[#1A0A00]">
+          <h1 className="font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A0A00]">
             About <span className="text-[#E8320A]">Momofy</span>
           </h1>
-          <p className="font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
+          <p className="font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
             From a Bangalore kitchen to 2,400+ restaurants — the Momofy story.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
       {/* Supply Chain */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00] text-center mb-10">
+          <h2 className="font-syne font-extrabold text-xl sm:text-2xl lg:text-3xl text-[#1A0A00] text-center mb-8">
             Our Supply Chain
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -80,7 +80,7 @@ export default function AboutPage() {
       {/* Team Placeholder */}
       <section className="py-16 bg-[#FFF8F0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00]">The Team</h2>
+          <h2 className="font-syne font-extrabold text-xl sm:text-2xl lg:text-3xl text-[#1A0A00]">The Team</h2>
           <p className="font-dm text-[#1A0A00]/60">
             A passionate team of food entrepreneurs, supply chain experts, and franchise builders — all united
             by a love for momos and a mission to help Indian entrepreneurs succeed.

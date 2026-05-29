@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-  { label: "Why Momofy", href: "/#why" },
+  { label: "About", href: "/about" },
   { label: "Products", href: "/products" },
   { label: "Franchise", href: "/franchise" },
   { label: "B2B", href: "/#b2b" },
