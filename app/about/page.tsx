@@ -1,0 +1,134 @@
+import type { Metadata } from "next";
+import CTABand from "@/components/CTABand";
+
+export const metadata: Metadata = {
+  title: "About Momofy — India's Premium Frozen Momo Brand",
+  description:
+    "Learn about Momofy — FSSAI certified frozen momo manufacturer and franchise brand based in Bangalore. Our story, supply chain, and certifications.",
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      <section className="pt-28 pb-16 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+          <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase">
+            Our Story
+          </p>
+          <h1 className="font-syne font-extrabold text-5xl sm:text-6xl text-[#1A0A00]">
+            About <span className="text-[#E8320A]">Momofy</span>
+          </h1>
+          <p className="font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
+            From a Bangalore kitchen to 2,400+ restaurants — the Momofy story.
+          </p>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <div className="bg-[#FFF8F0] rounded-3xl p-10 border border-orange-100 space-y-5">
+              <div className="text-5xl">🥟</div>
+              <h2 className="font-syne font-bold text-3xl text-[#1A0A00] m-0">
+                Born in Bangalore, 2022
+              </h2>
+              <p className="font-dm text-[#1A0A00]/70 leading-relaxed m-0">
+                Momofy was founded with a simple belief: India deserves premium, consistent, restaurant-quality
+                frozen momos that entrepreneurs can build profitable businesses around. Starting from a single
+                cloud kitchen in Bangalore, we&apos;ve grown to supply over 2,400 restaurants, cafés, cloud
+                kitchens, and food trucks across India.
+              </p>
+              <p className="font-dm text-[#1A0A00]/70 leading-relaxed m-0">
+                Our secret? We never compromise on ingredients. Every batch is made fresh, flash-frozen at
+                source, and delivered cold-chain all the way to your door. No preservatives. No shortcuts.
+                Just real momos that customers love and businesses profit from.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="py-16 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00] text-center mb-10">
+            Certifications & Compliance
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "🏛️",
+                label: "FSSAI Certified",
+                desc: "Full FSSAI food safety license. License no. 21220002003XXX",
+              },
+              {
+                icon: "📋",
+                label: "GSTIN Registered",
+                desc: "GST registered business. GSTIN: 29XXXXXXXXXXXXX",
+              },
+              {
+                icon: "™️",
+                label: "Trademark",
+                desc: "Momofy brand name and logo registered under Trademark Act.",
+              },
+            ].map((c) => (
+              <div
+                key={c.label}
+                className="bg-white rounded-2xl p-7 border border-orange-100 text-center space-y-3"
+              >
+                <div className="text-4xl">{c.icon}</div>
+                <h3 className="font-syne font-bold text-lg text-[#1A0A00]">{c.label}</h3>
+                <p className="font-dm text-sm text-[#1A0A00]/60">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Supply Chain */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00] text-center mb-10">
+            Our Supply Chain
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {[
+              { step: "Farm Fresh Ingredients", icon: "🌾" },
+              { step: "Bangalore Factory", icon: "🏭" },
+              { step: "Flash Frozen", icon: "❄️" },
+              { step: "Cold Chain Logistics", icon: "🚚" },
+              { step: "Your Kitchen", icon: "👨‍🍳" },
+            ].map((s, i) => (
+              <div key={s.step} className="flex items-center gap-4">
+                <div className="text-center space-y-2">
+                  <div className="text-4xl">{s.icon}</div>
+                  <p className="font-dm text-xs text-[#1A0A00]/60 max-w-[100px] text-center">{s.step}</p>
+                </div>
+                {i < 4 && (
+                  <span className="text-[#E8320A] text-2xl hidden sm:block">→</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Placeholder */}
+      <section className="py-16 bg-[#FFF8F0]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00]">The Team</h2>
+          <p className="font-dm text-[#1A0A00]/60">
+            A passionate team of food entrepreneurs, supply chain experts, and franchise builders — all united
+            by a love for momos and a mission to help Indian entrepreneurs succeed.
+          </p>
+          <div className="mt-8 bg-white rounded-3xl border-2 border-dashed border-orange-200 h-48 flex items-center justify-center">
+            <p className="font-dm text-[#1A0A00]/30 text-sm">Team photo coming soon</p>
+          </div>
+        </div>
+      </section>
+
+      <CTABand />
+    </>
+  );
+}
