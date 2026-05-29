@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import WhyMomofy from "@/components/WhyMomofy";
-import Products from "@/components/Products";
+import ProductList from "@/components/ProductList";
+import FreshVsFrozen from "@/components/FreshVsFrozen";
 import Franchise from "@/components/Franchise";
 import B2B from "@/components/B2B";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import HygieneSection from "@/components/HygieneSection";
 import LeadForm from "@/components/LeadForm";
 import CTABand from "@/components/CTABand";
 
@@ -28,13 +31,16 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <WhyMomofy />
-      <Products />
+      <ProductList />
+      <FreshVsFrozen />
       <Franchise />
       <B2B />
       <Testimonials />
+      <FAQ />
+      <HygieneSection />
 
-      {/* Lead Capture Section */}
-      <section id="contact" className="py-24 bg-[#FFF8F0]">
+      {/* Lead Capture */}
+      <section id="contact" className="py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
