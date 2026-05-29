@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Momofy — India's Fastest Growing Momo Franchise",
     description:
       "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. FSSAI certified. Pan India delivery.",
-    url: "https://momofy.in",
+    url: "https://momofyy.com",
     images: ["/og.png"],
   },
 };

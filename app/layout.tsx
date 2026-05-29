@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://momofy.in"),
+  metadataBase: new URL("https://momofyy.com"),
   title: "Momofy — India's Fastest Growing Momo Franchise",
   description:
     "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. FSSAI certified. Pan India delivery.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Momofy — India's Fastest Growing Momo Franchise",
     description:
       "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. FSSAI certified. Pan India delivery.",
-    url: "https://momofy.in",
+    url: "https://momofyy.com",
     images: ["/og.png"],
     type: "website",
   },

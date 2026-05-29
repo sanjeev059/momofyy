@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
 const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "918867361454";
-const EMAIL = process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofy.in";
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com";
 
 export default function Footer() {
   return (

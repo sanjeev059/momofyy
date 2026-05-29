@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
 const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "918867361454";
-const EMAIL = process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofy.in";
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com";
 const WA_MSG = encodeURIComponent("Hi Momofy! I'd like to get in touch.");
 
 export default function ContactPage() {

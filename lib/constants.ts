@@ -3,7 +3,7 @@ export const BRAND = {
   tagline: "India's Fastest Growing Momo Franchise",
   phone: process.env.NEXT_PUBLIC_PHONE ?? "918867361454",
   waNumber: process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454",
-  email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofy.in",
+  email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com",
   address: "Bangalore, Karnataka, India",
   fssai: "FSSAI Certified",
   gstin: "29XXXXXXXXXXXXX",
