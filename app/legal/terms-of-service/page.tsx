@@ -47,7 +47,7 @@ export default function TermsOfServicePage() {
           </Block>
 
           <Block title="4. Food Safety and Storage">
-            Momofy products are flash-frozen and must be maintained at -18°C throughout storage. Improper storage after delivery is the buyer's sole responsibility. Momofy is not liable for quality issues arising from improper storage, thawing, or mishandling after delivery.
+            Momofy products are flash-frozen and must be maintained at -18°C throughout storage. Improper storage after delivery is the buyer&apos;s sole responsibility. Momofy is not liable for quality issues arising from improper storage, thawing, or mishandling after delivery.
           </Block>
 
           <Block title="5. Franchise and B2B Terms">
