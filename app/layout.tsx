@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,16 +7,16 @@ import CartBar from "@/components/CartBar";
 import { CartProvider } from "@/lib/cart-context";
 import { Toaster } from "react-hot-toast";
 
-const syne = Syne({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-syne",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-dm-sans",
   display: "swap",
 });
@@ -49,7 +49,7 @@ export default function RootLayout({
   const waUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471"}?text=${encodeURIComponent("Hi Momofy! I'm interested in your franchise/B2B supply. Please share more details.")}`;
 
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       <body className="font-dm antialiased">
         <CartProvider>
           <Toaster position="top-center" />
