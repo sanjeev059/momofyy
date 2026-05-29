@@ -98,7 +98,7 @@ export default function Hero() {
 
             {/* Trust row */}
             <div className="flex flex-wrap gap-5 pt-2">
-              {["2,400+ Restaurants", "Pan India Delivery", "No Preservatives"].map((t) => (
+              {["2,400+ Restaurants", "Bangalore Delivery", "No Preservatives"].map((t) => (
                 <div key={t} className="flex items-center gap-1.5 font-dm text-sm text-[#1A0A00]/50">
                   <span className="text-[#E8320A] font-bold text-base">✓</span>
                   {t}

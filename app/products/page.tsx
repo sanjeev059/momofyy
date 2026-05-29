@@ -27,7 +27,7 @@ export default function ProductsPage() {
             Premium <span className="text-[#E8320A]">Frozen Momos</span>
           </h1>
           <p className="font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
-            No preservatives. Flash-frozen. MOQ ₹3,000. Pan India delivery.
+            No preservatives. Flash-frozen. MOQ ₹3,000. Bangalore delivery.
           </p>
         </div>
       </section>

@@ -220,8 +220,8 @@ export const WHY_CARDS = [
   },
   {
     icon: "🚚",
-    title: "Pan India Delivery",
-    desc: "Cold-chain logistics to every major city. Orders dispatched within 48 hrs.",
+    title: "Fast Delivery",
+    desc: "2-day delivery across Bangalore. Order by WhatsApp and we'll confirm the slot.",
   },
   {
     icon: "🤝",
@@ -245,14 +245,14 @@ export const STATS = [
   { label: "Pieces Per Day", value: "40,000" },
   { label: "Quality Assured", value: "✓" },
   { label: "In Business Since", value: "2022" },
-  { label: "Delivery Coverage", value: "Pan India" },
+  { label: "Delivery Coverage", value: "Bangalore" },
 ];
 
 export const B2B_CARDS = [
   {
     icon: "🍽️",
     title: "Restaurant & Café Supply",
-    desc: "Bulk frozen momo supply with consistent quality. MOQ ₹3,000. 48-hr delivery across Bangalore and major cities.",
+    desc: "Bulk frozen momo supply with consistent quality. MOQ ₹3,000. 2-day delivery across Bangalore.",
   },
   {
     icon: "📦",

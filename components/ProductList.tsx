@@ -162,9 +162,9 @@ export default function ProductList() {
         >
           <div className="text-3xl flex-shrink-0">🛒</div>
           <div className="text-white text-center sm:text-left">
-            <p className="font-syne font-bold text-base sm:text-lg">Next Day Delivery · Pan India Cold-Chain</p>
+            <p className="font-syne font-bold text-base sm:text-lg">2-Day Delivery · Bangalore Only</p>
             <p className="font-dm text-sm text-white/80 mt-0.5">
-              MOQ ₹3,000 · Add packs above → tap the cart bar at the bottom → fill your address → order goes to WhatsApp with your full details
+              MOQ ₹3,000 · Add packs above and tap the cart to order
             </p>
           </div>
         </motion.div>

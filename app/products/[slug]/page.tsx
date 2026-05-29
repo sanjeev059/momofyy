@@ -90,7 +90,7 @@ export default function ProductDetailPage({ params }: Props) {
               </a>
 
               <p className="font-dm text-xs text-center text-[#1A0A00]/40">
-                MOQ ₹3,000 · {product.moq} · Pan India delivery
+                MOQ ₹3,000 · {product.moq} · Bangalore delivery
               </p>
             </div>
           </div>
