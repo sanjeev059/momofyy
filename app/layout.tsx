@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://momofyy.com"),
   title: "Momofy — India's Fastest Growing Momo Franchise",
   description:
-    "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Pan India delivery.",
+    "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Bangalore delivery.",
   openGraph: {
     title: "Momofy — India's Fastest Growing Momo Franchise",
     description:
-      "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Pan India delivery.",
+      "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Bangalore delivery.",
     url: "https://momofyy.com",
     images: ["/og.png"],
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Momofy — India's Fastest Growing Momo Franchise",
-    description: "Frozen momos wholesale & franchise. No preservatives. Pan India delivery.",
+    description: "Frozen momos wholesale & franchise. No preservatives. Bangalore delivery.",
   },
 };
 
