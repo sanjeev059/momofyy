@@ -35,7 +35,7 @@ function HeroImage() {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-[#FFF8F0] overflow-hidden pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 sm:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left — copy */}
@@ -50,13 +50,13 @@ export default function Hero() {
               India&apos;s Fastest Growing Momo Franchise
             </div>
 
-            <h1 className="font-syne font-extrabold text-5xl sm:text-6xl text-[#1A0A00] leading-tight">
+            <h1 className="font-syne font-extrabold text-3xl sm:text-4xl lg:text-6xl text-[#1A0A00] leading-tight">
               The Future of{" "}
               <span className="text-[#E8320A]">Frozen Momos</span>{" "}
               is Here.
             </h1>
 
-            <p className="font-dm text-lg text-[#1A0A00]/65 max-w-xl leading-relaxed">
+            <p className="font-dm text-base sm:text-lg text-[#1A0A00]/65 max-w-xl leading-relaxed">
               Start your Momofy franchise or B2B supply partnership. Factory-direct frozen momos
               supplying 2,400+ restaurants across India — with margins that make business sense.
             </p>
@@ -79,18 +79,18 @@ export default function Hero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href={`https://wa.me/${WA_NUMBER}?text=${WA_MSG}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#E8320A] text-white font-syne font-bold text-base px-8 py-4 rounded-full hover:bg-[#c92a07] transition-all hover:shadow-lg hover:shadow-red-200 active:scale-95"
+                className="text-center bg-[#E8320A] text-white font-syne font-bold text-base px-8 py-4 rounded-full hover:bg-[#c92a07] transition-all hover:shadow-lg hover:shadow-red-200 active:scale-95"
               >
                 Start in ₹89,000 →
               </a>
               <Link
                 href="#products"
-                className="font-dm font-medium text-base text-[#1A0A00] px-8 py-4 rounded-full border border-[#1A0A00]/20 hover:border-[#E8320A] hover:text-[#E8320A] transition-colors"
+                className="text-center font-dm font-medium text-base text-[#1A0A00] px-8 py-4 rounded-full border border-[#1A0A00]/20 hover:border-[#E8320A] hover:text-[#E8320A] transition-colors"
               >
                 See Products ↓
               </Link>

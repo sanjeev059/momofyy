@@ -7,7 +7,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-14 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,7 +18,7 @@ export default function FAQ() {
           <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
             Got Questions?
           </p>
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
             Frequently Asked <span className="text-[#E8320A]">Questions</span>
           </h2>
         </motion.div>

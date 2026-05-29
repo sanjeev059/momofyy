@@ -31,7 +31,7 @@ export default function ProductDetailPage({ params }: Props) {
 
   return (
     <>
-      <section className="pt-28 pb-16 bg-[#FFF8F0]">
+      <section className="pt-20 sm:pt-28 pb-10 sm:pb-16 bg-[#FFF8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back link */}
           <Link
@@ -60,7 +60,7 @@ export default function ProductDetailPage({ params }: Props) {
             {/* Content */}
             <div className="space-y-6">
               <div>
-                <h1 className="font-syne font-extrabold text-4xl text-[#1A0A00]">{product.name}</h1>
+                <h1 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">{product.name}</h1>
                 <p className="font-dm text-[#1A0A00]/40 mt-1">{product.weight}</p>
               </div>
 
@@ -68,8 +68,8 @@ export default function ProductDetailPage({ params }: Props) {
 
               {/* Price */}
               <div className="flex items-baseline gap-3">
-                <span className="font-syne font-extrabold text-4xl text-[#E8320A]">₹{product.price}</span>
-                <span className="font-dm text-xl text-gray-400 line-through">₹{product.mrp}</span>
+                <span className="font-syne font-extrabold text-3xl sm:text-4xl text-[#E8320A]">₹{product.price}</span>
+                <span className="font-dm text-lg sm:text-xl text-gray-400 line-through">₹{product.mrp}</span>
                 <span className="font-dm text-base text-gray-400">/{product.unit}</span>
                 <span className="ml-2 font-dm text-sm font-semibold bg-green-50 text-green-700 px-3 py-1 rounded-lg">
                   {product.margin} margin
@@ -98,9 +98,9 @@ export default function ProductDetailPage({ params }: Props) {
       </section>
 
       {/* Details */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
 
             {/* Ingredients */}
             <div className="bg-[#FFF8F0] rounded-2xl p-7 border border-orange-100">

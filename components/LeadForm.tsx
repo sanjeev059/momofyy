@@ -116,10 +116,10 @@ export default function LeadForm({
   }
 
   return (
-    <div className="bg-white rounded-3xl p-8 sm:p-10 border border-orange-100">
-      <div className="mb-8">
-        <h3 className="font-syne font-bold text-2xl text-[#1A0A00]">{heading}</h3>
-        <p className="font-dm text-[#1A0A00]/60 mt-1">{subheading}</p>
+    <div className="bg-white rounded-3xl p-6 sm:p-10 border border-orange-100">
+      <div className="mb-6 sm:mb-8">
+        <h3 className="font-syne font-bold text-xl sm:text-2xl text-[#1A0A00]">{heading}</h3>
+        <p className="font-dm text-sm sm:text-base text-[#1A0A00]/60 mt-1">{subheading}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">

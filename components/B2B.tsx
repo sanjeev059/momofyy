@@ -4,7 +4,7 @@ import { B2B_CARDS } from "@/lib/constants";
 
 export default function B2B() {
   return (
-    <section id="b2b" className="py-24 bg-[#FFF8F0]">
+    <section id="b2b" className="py-14 sm:py-20 lg:py-24 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,10 +15,10 @@ export default function B2B() {
           <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
             B2B Supply
           </p>
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
             B2B <span className="text-[#E8320A]">Solutions</span>
           </h2>
-          <p className="mt-4 font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
+          <p className="mt-3 font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
             From single restaurants to national distributors — we scale with your ambition.
           </p>
         </motion.div>

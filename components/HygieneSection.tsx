@@ -28,7 +28,7 @@ const GUIDE_CARDS = [
 
 export default function HygieneSection() {
   return (
-    <section className="py-24 bg-[#FFF8F0]">
+    <section className="py-14 sm:py-20 lg:py-24 bg-[#FFF8F0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,7 +39,7 @@ export default function HygieneSection() {
           <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
             Quality Inside Out
           </p>
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
             How We Make the{" "}
             <span className="text-[#E8320A]">Healthiest & Most Hygienic</span> Momos
           </h2>

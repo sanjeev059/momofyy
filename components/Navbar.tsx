@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
   { label: "Why Momofy", href: "/#why" },
@@ -77,27 +78,37 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-[#FFF8F0] border-t border-orange-100 px-4 py-4 flex flex-col gap-4">
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.label}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="text-[#1A0A00] font-dm font-medium text-base py-1 hover:text-[#E8320A] transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
-          <Link
-            href="/franchise"
-            onClick={() => setOpen(false)}
-            className="bg-[#E8320A] text-white font-dm font-medium text-center px-5 py-3 rounded-full hover:bg-[#c92a07] transition-colors"
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="md:hidden bg-[#FFF8F0] border-t border-orange-100 overflow-hidden"
           >
-            Start Franchise →
-          </Link>
-        </div>
-      )}
+            <div className="px-4 py-4 flex flex-col gap-1">
+              {NAV_LINKS.map((l) => (
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className="text-[#1A0A00] font-dm font-medium text-base px-3 py-3 rounded-xl hover:bg-orange-50 hover:text-[#E8320A] transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+              <Link
+                href="/franchise"
+                onClick={() => setOpen(false)}
+                className="mt-2 bg-[#E8320A] text-white font-dm font-medium text-center px-5 py-3.5 rounded-full hover:bg-[#c92a07] transition-colors"
+              >
+                Start Franchise →
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

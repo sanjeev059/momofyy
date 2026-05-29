@@ -21,7 +21,7 @@ function ProductRow({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
     >
       <div className="flex flex-col sm:flex-row">
         {/* Image — left on desktop, top on mobile */}
-        <div className="relative sm:w-64 lg:w-72 flex-shrink-0 h-52 sm:h-auto overflow-hidden bg-gray-50">
+        <div className="relative sm:w-56 lg:w-72 flex-shrink-0 h-48 sm:h-auto overflow-hidden bg-gray-50">
           {!imgError ? (
             <Image
               src={p.image}
@@ -53,15 +53,15 @@ function ProductRow({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
                   </h3>
                 </Link>
               </div>
-              <span className="font-dm text-xs font-semibold bg-green-50 text-green-700 px-2.5 py-1 rounded-lg flex-shrink-0 hidden sm:block">
+              <span className="font-dm text-xs font-semibold bg-green-50 text-green-700 px-2.5 py-1 rounded-lg flex-shrink-0">
                 {p.margin} margin
               </span>
             </div>
             <p className="font-dm text-sm text-[#1A0A00]/65 leading-relaxed">{p.desc}</p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            {/* Price */}
+          <div className="space-y-3">
+            {/* Price row */}
             <div className="flex items-baseline gap-2">
               <span className="font-syne font-extrabold text-2xl text-[#E8320A]">
                 ₹{p.price}
@@ -71,21 +71,21 @@ function ProductRow({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
             </div>
 
             {/* Actions */}
-            <div className="flex items-center gap-3">
-              <Link
-                href={`/products/${p.slug}`}
-                className="font-dm text-sm font-medium text-[#1A0A00]/60 hover:text-[#E8320A] transition-colors underline underline-offset-2"
-              >
-                Learn More
-              </Link>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
               <a
                 href={`https://wa.me/${WA_NUMBER}?text=${waMsg}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#E8320A] text-white font-syne font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-[#c92a07] active:scale-95 transition-all"
+                className="flex-1 text-center bg-[#E8320A] text-white font-syne font-bold text-sm px-5 py-3 rounded-xl hover:bg-[#c92a07] active:scale-95 transition-all"
               >
-                Buy Now
+                Buy Now on WhatsApp
               </a>
+              <Link
+                href={`/products/${p.slug}`}
+                className="text-center font-dm text-sm font-medium text-[#1A0A00]/60 hover:text-[#E8320A] transition-colors border border-gray-200 rounded-xl px-4 py-3 sm:py-2.5"
+              >
+                Details
+              </Link>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ function ProductRow({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
 
 export default function ProductList() {
   return (
-    <section id="products" className="py-24 bg-[#FFF8F0]">
+    <section id="products" className="py-14 sm:py-20 lg:py-24 bg-[#FFF8F0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -107,10 +107,10 @@ export default function ProductList() {
           <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
             Our Products
           </p>
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
             Our <span className="text-[#E8320A]">Products</span>
           </h2>
-          <p className="mt-4 font-dm text-lg text-[#1A0A00]/60 max-w-xl mx-auto">
+          <p className="mt-3 font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-xl mx-auto">
             No preservatives. Flash-frozen. Add packs and order directly on WhatsApp.
           </p>
         </motion.div>

@@ -4,7 +4,7 @@ import { TESTIMONIALS } from "@/lib/constants";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-[#FFF8F0]">
+    <section className="py-14 sm:py-20 lg:py-24 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,10 +15,10 @@ export default function Testimonials() {
           <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
             Partner Stories
           </p>
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
             What Our <span className="text-[#E8320A]">Partners Say</span>
           </h2>
-          <p className="mt-4 font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
+          <p className="mt-3 font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
             Trusted by 2,400+ restaurants, cafés, and distributors across India.
           </p>
         </motion.div>

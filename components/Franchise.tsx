@@ -9,7 +9,7 @@ export default function Franchise() {
   return (
     <section
       id="franchise"
-      className="py-24 relative overflow-hidden"
+      className="py-14 sm:py-20 lg:py-24 relative overflow-hidden"
       style={{ backgroundColor: "#2E1500" }}
     >
       {/* Background decoration */}
@@ -31,11 +31,11 @@ export default function Franchise() {
               <p className="font-dm text-sm font-medium text-[#FFB347] tracking-widest uppercase mb-3">
                 Franchise Model
               </p>
-              <h2 className="font-syne font-extrabold text-4xl sm:text-5xl leading-tight">
+              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-5xl leading-tight">
                 India&apos;s Fastest Growing{" "}
                 <span className="text-[#E8320A]">Momo Franchise</span>
               </h2>
-              <p className="mt-4 font-dm text-lg text-white/60">
+              <p className="mt-3 font-dm text-base sm:text-lg text-white/60">
                 Low investment. Quick setup. Proven model. Join 2,400+ businesses already profiting with Momofy.
               </p>
             </div>
@@ -68,12 +68,12 @@ export default function Franchise() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 space-y-6"
+            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 space-y-6"
           >
             {/* Investment */}
             <div className="text-center pb-4 border-b border-white/10">
               <p className="font-dm text-sm text-white/50 mb-1">One-time Franchise Fee</p>
-              <p className="font-syne font-extrabold text-5xl text-[#FFB347]">₹89,000</p>
+              <p className="font-syne font-extrabold text-4xl sm:text-5xl text-[#FFB347]">₹89,000</p>
             </div>
 
             {/* ROI Grid */}

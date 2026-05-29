@@ -40,16 +40,16 @@ export default function Home() {
       <HygieneSection />
 
       {/* Lead Capture */}
-      <section id="contact" className="py-24 bg-white">
+      <section id="contact" className="py-14 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <p className="font-dm text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="font-dm text-xs sm:text-sm font-medium text-[#E8320A] tracking-widest uppercase mb-3">
               Get Started
             </p>
-            <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-[#1A0A00]">
+            <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#1A0A00]">
               Start Your Momofy Journey
             </h2>
-            <p className="mt-4 font-dm text-lg text-[#1A0A00]/60">
+            <p className="mt-3 font-dm text-base sm:text-lg text-[#1A0A00]/60">
               Franchise, B2B supply, distributorship — tell us what you need.
             </p>
           </div>

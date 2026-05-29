@@ -7,7 +7,7 @@ const WA_MSG = encodeURIComponent("Hi Momofy! I'm ready to get started. Please s
 
 export default function CTABand() {
   return (
-    <section className="py-20 bg-[#E8320A] relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-[#E8320A] relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 right-0 w-72 h-72 rounded-full bg-white/5" />
         <div className="absolute bottom-0 -left-20 w-56 h-56 rounded-full bg-black/10" />
@@ -20,10 +20,10 @@ export default function CTABand() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h2 className="font-syne font-extrabold text-4xl sm:text-5xl text-white">
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white">
             Ready to launch your Momofy business today?
           </h2>
-          <p className="font-dm text-white/80 text-lg">
+          <p className="font-dm text-white/80 text-base sm:text-lg">
             Join 2,400+ restaurants and franchisees already earning with Momofy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
