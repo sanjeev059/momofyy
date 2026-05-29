@@ -25,7 +25,7 @@ export const PRODUCTS = [
     unit: "packet",
     margin: "67%",
     moq: "Min 30 packs",
-    desc: "Made with farm-fresh Ooty cabbage, carrots, and onions using AI-based machines for ultra-thin dough and authentic taste.",
+    desc: "Made with farm-fresh Ooty cabbage, carrots, and onions — hand-crafted with thin dough and authentic home-style taste.",
     ingredients: [
       "Ooty Cabbage", "Fresh Carrots", "Onions", "Premium Maida",
       "Sunpure Oil", "Aromat Seasoning", "Green Chillies", "Coriander",
@@ -49,7 +49,7 @@ export const PRODUCTS = [
     unit: "packet",
     margin: "63%",
     moq: "Min 30 packs",
-    desc: "100% real chicken and fresh onions, crafted using AI-based machines for the perfect balance of flavor and texture.",
+    desc: "100% real chicken and fresh onions — hand-crafted in small batches for the perfect balance of flavour and texture.",
     ingredients: [
       "Fresh Chicken (100% real)", "Onions", "Premium Maida",
       "Sunpure Oil", "Aromat Seasoning", "Ginger", "Garlic", "Black Pepper",
@@ -210,8 +210,8 @@ export const PRODUCTS = [
 export const WHY_CARDS = [
   {
     icon: "🏭",
-    title: "Direct from Factory",
-    desc: "No middlemen. You buy directly from our Bangalore facility at factory prices.",
+    title: "Direct from Kitchen",
+    desc: "No middlemen. You buy directly from our Bangalore kitchen at the best prices.",
   },
   {
     icon: "🏷️",
@@ -372,7 +372,7 @@ export const FAQS = [
 ];
 
 export const COMPARISON_TABLE = [
-  { criteria: "Hygiene Control", fresh: "Variable, exposed to environment", momofy: "Factory processed, sealed & traceable" },
+  { criteria: "Hygiene Control", fresh: "Variable, exposed to environment", momofy: "Home kitchen made, sealed & traceable" },
   { criteria: "Preservation", fresh: "Short shelf-life, spoilage risk", momofy: "Flash frozen, long shelf-life without chemicals" },
   { criteria: "Nutrition", fresh: "Can degrade over time", momofy: "Locked-in nutrients via rapid freezing" },
   { criteria: "Consistency", fresh: "Depends on maker", momofy: "Standardized recipe & QC" },

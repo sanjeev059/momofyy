@@ -57,7 +57,7 @@ export default function Hero() {
             </h1>
 
             <p className="font-dm text-base sm:text-lg text-[#1A0A00]/65 max-w-xl leading-relaxed">
-              Start your Momofy franchise or B2B supply partnership. Factory-direct frozen momos
+              Start your Momofy franchise or B2B supply partnership. Home-made frozen momos
               supplying 2,400+ restaurants across India — with margins that make business sense.
             </p>
 

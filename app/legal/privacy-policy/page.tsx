@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
           <Block title="1. Who We Are">
-            Momofy (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a frozen momo manufacturing and franchise company headquartered in Bangalore, Karnataka, India. We operate the website momofyy.com and supply frozen momos to restaurants, franchisees, and B2B partners across India.
+            Momofy (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a home-made frozen momo brand and franchise company headquartered in Bangalore, Karnataka, India. We operate the website momofyy.com and supply frozen momos to restaurants, franchisees, and B2B partners across India.
           </Block>
 
           <Block title="2. Information We Collect">

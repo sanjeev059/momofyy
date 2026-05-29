@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             {[
               { step: "Farm Fresh Ingredients", icon: "🌾" },
-              { step: "Bangalore Factory", icon: "🏭" },
+              { step: "Bangalore Kitchen", icon: "🍳" },
               { step: "Flash Frozen", icon: "❄️" },
               { step: "Cold Chain Logistics", icon: "🚚" },
               { step: "Your Kitchen", icon: "👨‍🍳" },

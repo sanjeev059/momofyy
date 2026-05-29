@@ -19,7 +19,7 @@ export default function WhyMomofy() {
             Why <span className="text-[#E8320A]">Momofy</span>?
           </h2>
           <p className="mt-3 font-dm text-base sm:text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
-            We&apos;re not just a momo supplier. We&apos;re your business partner from factory to plate.
+            We&apos;re not just a momo supplier. We&apos;re your business partner from our kitchen to your plate.
           </p>
         </motion.div>
 
