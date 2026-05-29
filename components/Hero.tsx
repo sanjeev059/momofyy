@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471";
 const WA_MSG = encodeURIComponent("Hi Momofy! I want to start a franchise. Please share details.");
 
 function HeroImage() {

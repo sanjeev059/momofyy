@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { FRANCHISE_STEPS, FRANCHISE_FEATURES } from "@/lib/constants";
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471";
 const WA_MSG = encodeURIComponent("Hi Momofy! I want to apply for a franchise. Please share the details and next steps.");
 
 export default function Franchise() {

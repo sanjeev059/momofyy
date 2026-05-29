@@ -2,14 +2,52 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { PRODUCTS } from "@/lib/constants";
+import { useCart } from "@/lib/cart-context";
 import Image from "next/image";
 import Link from "next/link";
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
+function QtyControl({ product }: { product: typeof PRODUCTS[0] }) {
+  const { getQty, setQty } = useCart();
+  const qty = getQty(product.id);
+
+  const update = (next: number) =>
+    setQty(product.id, product.name, product.emoji, product.weight, product.price, next);
+
+  if (qty === 0) {
+    return (
+      <button
+        onClick={() => update(1)}
+        className="w-full bg-[#E8320A] text-white font-syne font-bold text-sm py-3 rounded-xl hover:bg-[#c92a07] active:scale-95 transition-all"
+      >
+        + Add to Order
+      </button>
+    );
+  }
+
+  return (
+    <div className="flex items-center gap-3">
+      <button
+        onClick={() => update(qty - 1)}
+        className="w-10 h-10 rounded-xl bg-[#FFF8F0] border border-orange-100 font-bold text-[#E8320A] text-xl hover:bg-[#E8320A] hover:text-white transition-colors flex items-center justify-center"
+      >
+        −
+      </button>
+      <div className="flex-1 text-center">
+        <p className="font-syne font-extrabold text-xl text-[#1A0A00]">{qty}</p>
+        <p className="font-dm text-xs text-[#1A0A00]/40">₹{product.price * qty}</p>
+      </div>
+      <button
+        onClick={() => update(qty + 1)}
+        className="w-10 h-10 rounded-xl bg-[#E8320A] text-white font-bold text-xl hover:bg-[#c92a07] transition-colors flex items-center justify-center"
+      >
+        +
+      </button>
+    </div>
+  );
+}
 
 function ProductCard({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
   const [imgError, setImgError] = useState(false);
-  const waMsg = encodeURIComponent(`Hi Momofy! I want to order ${p.name} (₹${p.price}/pack). Please share details.`);
 
   return (
     <motion.div
@@ -35,7 +73,6 @@ function ProductCard({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
             <span className="text-8xl drop-shadow-lg">{p.emoji}</span>
           </div>
         )}
-        {/* Tag */}
         <span className={`absolute top-3 left-3 text-xs font-dm font-semibold px-3 py-1 rounded-full shadow-md ${p.tagColor}`}>
           {p.tag}
         </span>
@@ -43,40 +80,27 @@ function ProductCard({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
 
       {/* Body */}
       <div className="flex flex-col flex-1 p-5 gap-3">
-        {/* Name + weight */}
         <div>
-          <h3 className="font-syne font-bold text-lg text-[#1A0A00] leading-snug">
-            {p.name}
-          </h3>
+          <h3 className="font-syne font-bold text-lg text-[#1A0A00] leading-snug">{p.name}</h3>
           <p className="font-dm text-xs text-[#1A0A00]/40 mt-0.5">{p.weight}</p>
         </div>
 
-        {/* Description */}
-        <p className="font-dm text-sm text-[#1A0A00]/60 leading-relaxed flex-1">
-          {p.desc}
-        </p>
+        <p className="font-dm text-sm text-[#1A0A00]/60 leading-relaxed flex-1 line-clamp-2">{p.desc}</p>
 
-        {/* Price row */}
-        <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-          <div className="flex items-baseline gap-2">
-            <span className="font-syne font-extrabold text-2xl text-[#E8320A]">₹{p.price}</span>
+        {/* Price */}
+        <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+          <div className="flex items-baseline gap-1.5">
+            <span className="font-syne font-extrabold text-xl text-[#E8320A]">₹{p.price}</span>
             <span className="font-dm text-sm text-gray-400 line-through">₹{p.mrp}</span>
-            <span className="font-dm text-xs text-gray-400">/Packet</span>
+            <span className="font-dm text-xs text-gray-400">/pack</span>
           </div>
           <span className="font-dm text-xs font-semibold bg-green-50 text-green-700 px-2 py-1 rounded-lg">
-            {p.margin} margin
+            {p.margin}
           </span>
         </div>
 
-        {/* Buy Now */}
-        <a
-          href={`https://wa.me/${WA_NUMBER}?text=${waMsg}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-1 w-full text-center bg-[#E8320A] text-white font-syne font-bold text-sm py-3 rounded-xl hover:bg-[#c92a07] active:scale-95 transition-all"
-        >
-          Buy Now
-        </a>
+        {/* Quantity control */}
+        <QtyControl product={p} />
       </div>
     </motion.div>
   );
@@ -99,7 +123,7 @@ export default function Products() {
             Our <span className="text-[#E8320A]">Products</span>
           </h2>
           <p className="mt-4 font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
-            No preservatives. Flash-frozen for maximum shelf life and taste.
+            Add packs to your order, then submit — we&apos;ll confirm on WhatsApp.
           </p>
         </motion.div>
 

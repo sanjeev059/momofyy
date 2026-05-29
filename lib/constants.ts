@@ -1,8 +1,8 @@
 export const BRAND = {
   name: "Momofy",
   tagline: "India's Fastest Growing Momo Franchise",
-  phone: process.env.NEXT_PUBLIC_PHONE ?? "918867361454",
-  waNumber: process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "916305468471",
+  waNumber: process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com",
   address: "Bangalore, Karnataka, India",
 };

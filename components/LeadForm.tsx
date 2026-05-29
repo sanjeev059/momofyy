@@ -27,7 +27,7 @@ interface LeadFormProps {
   subheading?: string;
 }
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471";
 
 export default function LeadForm({
   defaultEnquiryType,

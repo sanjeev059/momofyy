@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
-const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "918867361454";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471";
+const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "916305468471";
 const WA_MSG = encodeURIComponent("Hi Momofy! I'm ready to get started. Please share more details.");
 
 export default function CTABand() {
@@ -39,7 +39,7 @@ export default function CTABand() {
               href={`tel:+${PHONE}`}
               className="border-2 border-white text-white font-syne font-bold text-base px-8 py-4 rounded-full hover:bg-white/10 transition-colors"
             >
-              Call +91 88673 61454
+              Call +91 63054 68471
             </a>
           </div>
         </motion.div>

@@ -3,11 +3,11 @@ import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Contact — Momofy",
-  description: "Contact Momofy for franchise enquiries, B2B supply, distributorship, or export. Call or WhatsApp +91 88673 61454.",
+  description: "Contact Momofy for franchise enquiries, B2B supply, distributorship, or export. Call or WhatsApp +91 63054 68471.",
 };
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
-const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "918867361454";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "916305468471";
+const PHONE = process.env.NEXT_PUBLIC_PHONE ?? "916305468471";
 const EMAIL = process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com";
 const WA_MSG = encodeURIComponent("Hi Momofy! I'd like to get in touch.");
 
@@ -35,14 +35,14 @@ export default function ContactPage() {
               {
                 icon: "💬",
                 label: "WhatsApp",
-                value: "+91 88673 61454",
+                value: "+91 63054 68471",
                 href: `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`,
                 desc: "Fastest response — usually within 1 hour",
               },
               {
                 icon: "📞",
                 label: "Phone",
-                value: "+91 88673 61454",
+                value: "+91 63054 68471",
                 href: `tel:+${PHONE}`,
                 desc: "Mon–Sat, 9 AM to 7 PM IST",
               },
