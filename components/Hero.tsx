@@ -21,7 +21,7 @@ function HeroImage() {
 
   return (
     <Image
-      src="/images/hero-momo.jpg"
+      src="https://i.ibb.co/1rK1nVG/heror-1.jpg"
       alt="Momofy — Premium Frozen Momos"
       fill
       priority

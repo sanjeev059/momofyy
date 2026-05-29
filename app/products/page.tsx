@@ -5,13 +5,16 @@ import { PRODUCTS, BULK_PRICING } from "@/lib/constants";
 import LeadForm from "@/components/LeadForm";
 import CTABand from "@/components/CTABand";
 
-function ProductDetailCard({ p, index }: { p: typeof PRODUCTS[0]; index: number }) {
+const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454";
+
+function ProductDetailCard({ p }: { p: typeof PRODUCTS[0] }) {
   const [imgError, setImgError] = useState(false);
+  const waMsg = encodeURIComponent(`Hi Momofy! I want to order ${p.name} (₹${p.price}/pack). Please share details.`);
 
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden border border-orange-100 hover:border-[#E8320A] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
       {/* Image */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-56 overflow-hidden bg-gray-50">
         {!imgError ? (
           <Image
             src={p.image}
@@ -22,43 +25,51 @@ function ProductDetailCard({ p, index }: { p: typeof PRODUCTS[0]; index: number 
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
-          <div className={`w-full h-full bg-gradient-to-br ${p.gradient} flex flex-col items-center justify-center gap-2`}>
-            <span className="text-7xl drop-shadow-lg">{p.emoji}</span>
-            <span className="text-white/70 text-xs font-dm font-medium tracking-wide uppercase">
-              Photo coming soon
-            </span>
+          <div className={`w-full h-full bg-gradient-to-br ${p.gradient} flex items-center justify-center`}>
+            <span className="text-8xl drop-shadow-lg">{p.emoji}</span>
           </div>
         )}
-        <span className={`absolute top-3 left-3 text-xs font-dm font-semibold px-3 py-1 rounded-full shadow ${p.tagColor}`}>
+        <span className={`absolute top-3 left-3 text-xs font-dm font-semibold px-3 py-1 rounded-full shadow-md ${p.tagColor}`}>
           {p.tag}
-        </span>
-        <span className="absolute bottom-3 right-3 bg-black/50 backdrop-blur-sm text-white text-xs font-dm px-2.5 py-1 rounded-full">
-          {p.weight}
         </span>
       </div>
 
-      {/* Details */}
-      <div className="p-6 space-y-4">
+      {/* Body */}
+      <div className="flex flex-col flex-1 p-5 gap-3">
         <div>
           <h3 className="font-syne font-bold text-xl text-[#1A0A00]">{p.name}</h3>
-          <p className="font-dm text-sm text-[#1A0A00]/60 mt-1 leading-relaxed">{p.desc}</p>
+          <p className="font-dm text-xs text-[#1A0A00]/40 mt-0.5">{p.weight}</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 pt-1">
-          {[
-            { label: "Wholesale", value: `₹${p.price}/pack` },
-            { label: "MRP", value: `₹${p.mrp}` },
-            { label: "Margin", value: p.margin },
-            { label: "MOQ", value: p.moq },
-          ].map((r) => (
-            <div key={r.label} className="bg-[#FFF8F0] rounded-xl p-3">
-              <p className="font-dm text-xs text-[#1A0A00]/40 uppercase tracking-wide">{r.label}</p>
-              <p className={`font-syne font-bold mt-0.5 ${r.label === "MRP" ? "line-through text-[#1A0A00]/40 text-sm" : r.label === "Margin" ? "text-green-600" : "text-[#E8320A]"}`}>
-                {r.value}
-              </p>
-            </div>
-          ))}
+        <p className="font-dm text-sm text-[#1A0A00]/60 leading-relaxed flex-1">{p.desc}</p>
+
+        <div className="grid grid-cols-2 gap-2 pt-1">
+          <div className="bg-[#FFF8F0] rounded-xl p-3">
+            <p className="font-dm text-xs text-[#1A0A00]/40 uppercase tracking-wide">Wholesale</p>
+            <p className="font-syne font-bold text-[#E8320A] mt-0.5">₹{p.price}/pack</p>
+          </div>
+          <div className="bg-[#FFF8F0] rounded-xl p-3">
+            <p className="font-dm text-xs text-[#1A0A00]/40 uppercase tracking-wide">MRP</p>
+            <p className="font-syne font-bold text-gray-400 line-through mt-0.5">₹{p.mrp}</p>
+          </div>
+          <div className="bg-green-50 rounded-xl p-3">
+            <p className="font-dm text-xs text-green-600/60 uppercase tracking-wide">Margin</p>
+            <p className="font-syne font-bold text-green-600 mt-0.5">{p.margin}</p>
+          </div>
+          <div className="bg-[#FFF8F0] rounded-xl p-3">
+            <p className="font-dm text-xs text-[#1A0A00]/40 uppercase tracking-wide">MOQ</p>
+            <p className="font-syne font-bold text-[#1A0A00] text-sm mt-0.5">{p.moq}</p>
+          </div>
         </div>
+
+        <a
+          href={`https://wa.me/${WA_NUMBER}?text=${waMsg}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 w-full text-center bg-[#E8320A] text-white font-syne font-bold text-sm py-3 rounded-xl hover:bg-[#c92a07] active:scale-95 transition-all"
+        >
+          Buy Now
+        </a>
       </div>
     </div>
   );
@@ -86,8 +97,8 @@ export default function ProductsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PRODUCTS.map((p, i) => (
-              <ProductDetailCard key={p.id} p={p} index={i} />
+            {PRODUCTS.map((p) => (
+              <ProductDetailCard key={p.id} p={p} />
             ))}
           </div>
         </div>
@@ -99,7 +110,7 @@ export default function ProductsPage() {
           <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00] text-center mb-10">
             Bulk Pricing Tiers
           </h2>
-          <div className="bg-white rounded-2xl border border-orange-100 overflow-hidden">
+          <div className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm">
             <table className="w-full">
               <thead className="bg-[#1A0A00] text-white">
                 <tr>
@@ -114,7 +125,7 @@ export default function ProductsPage() {
                 {BULK_PRICING.map((row, i) => (
                   <tr
                     key={row.qty}
-                    className={`border-t border-orange-50 ${i === BULK_PRICING.length - 1 ? "bg-[#E8320A]/5" : ""}`}
+                    className={`border-t border-orange-50 ${i === BULK_PRICING.length - 1 ? "bg-[#E8320A]/5 font-bold" : ""}`}
                   >
                     <td className="px-5 py-4 font-dm text-sm font-medium text-[#1A0A00]">{row.qty}</td>
                     <td className="px-5 py-4 font-syne font-bold text-[#E8320A]">{row.veg}</td>
