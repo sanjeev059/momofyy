@@ -20,7 +20,7 @@ export default function Products() {
             Premium <span className="text-[#E8320A]">Frozen Momos</span>
           </h2>
           <p className="mt-4 font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
-            FSSAI certified. No preservatives. Flash-frozen for maximum shelf life and taste.
+            No preservatives. Flash-frozen for maximum shelf life and taste.
           </p>
         </motion.div>
 

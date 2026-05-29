@@ -12,11 +12,11 @@ import CTABand from "@/components/CTABand";
 export const metadata: Metadata = {
   title: "Momofy — India's Fastest Growing Momo Franchise",
   description:
-    "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. FSSAI certified. Pan India delivery.",
+    "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Pan India delivery.",
   openGraph: {
     title: "Momofy — India's Fastest Growing Momo Franchise",
     description:
-      "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. FSSAI certified. Pan India delivery.",
+      "Start a Momofy momo franchise from ₹89,000 or order frozen momos wholesale. No preservatives. Pan India delivery.",
     url: "https://momofyy.com",
     images: ["/og.png"],
   },

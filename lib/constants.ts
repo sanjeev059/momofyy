@@ -5,8 +5,6 @@ export const BRAND = {
   waNumber: process.env.NEXT_PUBLIC_WA_NUMBER ?? "918867361454",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@momofyy.com",
   address: "Bangalore, Karnataka, India",
-  fssai: "FSSAI Certified",
-  gstin: "29XXXXXXXXXXXXX",
 };
 
 export const WA_MESSAGE = encodeURIComponent(
@@ -117,14 +115,14 @@ export const WHY_CARDS = [
   {
     icon: "🌿",
     title: "No Preservatives",
-    desc: "100% natural ingredients. Flash-frozen at source. FSSAI certified.",
+    desc: "100% natural ingredients. Flash-frozen at source. No artificial additives.",
   },
 ];
 
 export const STATS = [
   { label: "Restaurants Supplied", value: "2,400+" },
   { label: "Pieces Per Day", value: "40,000" },
-  { label: "FSSAI Certified", value: "✓" },
+  { label: "Quality Assured", value: "✓" },
   { label: "In Business Since", value: "2022" },
   { label: "Delivery Coverage", value: "Pan India" },
 ];
@@ -143,7 +141,7 @@ export const B2B_CARDS = [
   {
     icon: "🏷️",
     title: "Private Labeling",
-    desc: "Launch your own momo brand. We handle manufacturing, packaging, and FSSAI. You handle sales.",
+    desc: "Launch your own momo brand. We handle manufacturing, packaging, and compliance. You handle sales.",
   },
   {
     icon: "✈️",
@@ -211,7 +209,7 @@ export const FAQS = [
   },
   {
     q: "Do you offer private labeling?",
-    a: "Yes! We offer full private labeling — custom packaging, your brand name, and FSSAI-compliant labels. Minimum order is 500 units per SKU.",
+    a: "Yes! We offer full private labeling — custom packaging and your brand name on every pack. Minimum order is 500 units per SKU.",
   },
   {
     q: "Is delivery available across India?",

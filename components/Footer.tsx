@@ -16,7 +16,7 @@ export default function Footer() {
               <span className="text-white">fy</span>
             </div>
             <p className="font-dm text-sm text-white/50 leading-relaxed">
-              India&apos;s fastest growing frozen momo franchise. FSSAI certified. 2,400+ restaurant partners.
+              India&apos;s fastest growing frozen momo franchise. 2,400+ restaurant partners.
               Bangalore-based, pan India delivery.
             </p>
             <div className="flex gap-3">
@@ -93,10 +93,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-5 p-3 bg-white/5 rounded-xl">
-              <p className="font-dm text-xs text-white/40">FSSAI License</p>
-              <p className="font-dm text-xs text-white/60 font-medium mt-0.5">21220002003XXX</p>
-            </div>
           </div>
         </div>
       </div>
@@ -107,7 +103,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Momofy. All rights reserved.
           </p>
           <p className="font-dm text-xs text-white/40">
-            FSSAI Certified | Made in Bangalore 🇮🇳
+            Made in Bangalore 🇮🇳
           </p>
         </div>
       </div>

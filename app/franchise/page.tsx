@@ -147,7 +147,7 @@ export default function FranchisePage() {
             </ul>
             <div className="bg-[#FFF8F0] rounded-2xl p-5 border border-orange-100">
               <p className="font-dm text-sm text-[#1A0A00]/60">
-                <strong className="text-[#1A0A00]">Requirements:</strong> A kitchen space (min 100 sq ft), basic cooking equipment, FSSAI basic registration, and enthusiasm.
+                <strong className="text-[#1A0A00]">Requirements:</strong> A kitchen space (min 100 sq ft), basic cooking equipment, and enthusiasm to get started.
               </p>
             </div>
           </div>

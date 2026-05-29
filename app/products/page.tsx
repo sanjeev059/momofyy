@@ -7,7 +7,7 @@ import CTABand from "@/components/CTABand";
 export const metadata: Metadata = {
   title: "Products — Momofy Frozen Momos",
   description:
-    "Buy frozen momos wholesale from Momofy. MOQ ₹3,000. FSSAI certified. Veg, Chicken, Paneer, Corn Cheese and more.",
+    "Buy frozen momos wholesale from Momofy. MOQ ₹3,000. No preservatives. Veg, Chicken, Paneer, Corn Cheese and more.",
 };
 
 export default function ProductsPage() {
@@ -23,7 +23,7 @@ export default function ProductsPage() {
             Premium <span className="text-[#E8320A]">Frozen Momos</span>
           </h1>
           <p className="font-dm text-lg text-[#1A0A00]/60 max-w-2xl mx-auto">
-            FSSAI certified. No preservatives. Flash-frozen. MOQ ₹3,000. Pan India delivery.
+            No preservatives. Flash-frozen. MOQ ₹3,000. Pan India delivery.
           </p>
         </div>
       </section>

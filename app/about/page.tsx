@@ -4,7 +4,7 @@ import CTABand from "@/components/CTABand";
 export const metadata: Metadata = {
   title: "About Momofy — India's Premium Frozen Momo Brand",
   description:
-    "Learn about Momofy — FSSAI certified frozen momo manufacturer and franchise brand based in Bangalore. Our story, supply chain, and certifications.",
+    "Learn about Momofy — India's premium frozen momo brand based in Bangalore. Our story, supply chain, and team.",
 };
 
 export default function AboutPage() {
@@ -45,43 +45,6 @@ export default function AboutPage() {
                 Just real momos that customers love and businesses profit from.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-16 bg-[#FFF8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-syne font-extrabold text-3xl text-[#1A0A00] text-center mb-10">
-            Certifications & Compliance
-          </h2>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              {
-                icon: "🏛️",
-                label: "FSSAI Certified",
-                desc: "Full FSSAI food safety license. License no. 21220002003XXX",
-              },
-              {
-                icon: "📋",
-                label: "GSTIN Registered",
-                desc: "GST registered business. GSTIN: 29XXXXXXXXXXXXX",
-              },
-              {
-                icon: "™️",
-                label: "Trademark",
-                desc: "Momofy brand name and logo registered under Trademark Act.",
-              },
-            ].map((c) => (
-              <div
-                key={c.label}
-                className="bg-white rounded-2xl p-7 border border-orange-100 text-center space-y-3"
-              >
-                <div className="text-4xl">{c.icon}</div>
-                <h3 className="font-syne font-bold text-lg text-[#1A0A00]">{c.label}</h3>
-                <p className="font-dm text-sm text-[#1A0A00]/60">{c.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
